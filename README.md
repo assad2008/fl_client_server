@@ -7,7 +7,6 @@ C/S架构中的S
 
 加密解密已经完成。控制器/方法为Command
 
-
 - $this->params为客户端传的commandInfo 
 - $this->user_id为uuid 
 - $this->uid为uid  
@@ -17,13 +16,13 @@ C/S架构中的S
 
 ### 日志
 
-/data/logs/,
+	/data/logs/
 
-- cilogs目录为CI的Log目录  
-- lwlogs目录为联网日志  
-- rplogs为打印数据的一个日志目录  
+- `cilogs`目录为CI的Log目录  
+- `lwlogs`目录为联网日志  
+- `rplogs`为打印数据的一个日志目录  
 
-### 示例：
+### 业务示例：
 
 	<?php
 
@@ -93,4 +92,4 @@ C/S架构中的S
 
 	$this->echodata(1,'','您查询的数据不存在',-1);
 	
-***echodata为自动终止程序运行***
+***echodata可以自动终止程序运行***
