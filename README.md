@@ -5,8 +5,30 @@ C/S架构中的S
 
 提供给客户端的数据后端服务,基于CI开发
 
-加密解密已经完成。控制器/方法为Command
+加密解密已经完成。
 
+### Command
+
+客户端请求数据，使用的是Command
+
+控制器/方法为 Command
+
+比如：一个协议conmand定义为：`movie/start`
+
+那么必须实现一个`Movie`的`控制器`，再在class中完成start方法。
+
+客户端请求地址为：
+
+	http://url/movie/start
+
+数据调试访问地址：
+	
+	http://url/movie/start?test=1
+
+
+### 控制器中的顶级变量
+
+- $this->recvdata为接收到客户端的所有请求数据
 - $this->params为客户端传的commandInfo 
 - $this->user_id为uuid 
 - $this->uid为uid  
