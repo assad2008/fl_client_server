@@ -17,7 +17,11 @@ C/S架构中的S
 
 ### 日志
 
-/data/logs/,cilogs目录为CI的Log目录。lwlogs目录为联网日志,rplogs为打印数据的一个日志目录
+/data/logs/,
+
+- cilogs目录为CI的Log目录  
+- lwlogs目录为联网日志  
+- rplogs为打印数据的一个日志目录  
 
 ### 示例：
 
@@ -38,10 +42,13 @@ C/S架构中的S
 			$this->echodata(1,array('List' => array('Do' => 'This is a test')));
 		}
 	}
+
+	
+### 调试
 	
 如果需要在浏览器进行调试
 
-则访问：http://xxxx/welcome/test?`test=1`
+则访问：http://xxxx/welcome/test?`test=1`，拼上?test=1，即为浏览器调试模式
 
 则会显示出：
 
@@ -72,7 +79,7 @@ C/S架构中的S
 `echodata`方法的功能是向客户端返回数据
 
 - 第一个参数为：成功或者失败，成功1，失败0  
-- 第二个参数为要返回的数据，可以为空，必须为array  
+- 第二个参数为要返回的数据，可以为空，如果不为空，则必须为array  
 - 第三个参数为Tips，如果需要提示，则使用  
 - 第四个参数为code,0或者负数，当失败的时候，可以使用负数  
 
