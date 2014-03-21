@@ -11,7 +11,7 @@ C/S架构中的S
 
 客户端请求数据，使用的是Command
 
-控制器/方法为 Command
+`控制器/方法`为Command
 
 比如：一个协议conmand定义为：`movie/start`
 
