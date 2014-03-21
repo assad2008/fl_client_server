@@ -7,13 +7,13 @@ B/S架构中的S
 
 加密解密已经完成。控制器/方法为Command
 
-||顶级属性||代表含义||
-||$this->params||客户端传的commandInfo||
-||$this->user_id ||uuid||
-||$this->uid || uid||
-||$this->pid || 产品ID||
-||$this->softversion|| 版本号||
-||$this->coopid||渠道号||
+
+- $this->params  客户端传的commandInfo 
+- $this->user_id  uuid 
+- $this->uid  uid  
+- $this->pid  产品ID  
+- $this->softversion  版本号  
+- $this->coopid  渠道号
 
 ### 日志
 
